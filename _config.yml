@@ -1,2 +1,4 @@
 name: Liam Toney
 markdown: kramdown
+plugins:
+  - jekyll-sitemap
