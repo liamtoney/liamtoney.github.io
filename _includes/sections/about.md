@@ -1,6 +1,3 @@
-Built with [Jekyll](https://jekyllrb.com/) and hosted for free on [GitHub Pages](https://pages.github.com/).  
-Design modified from [Dimension](https://html5up.net/dimension) by [ajlkn](https://aj.lkn.io/) (other excellent templates at [HTML5 UP](https://html5up.net/)).  
-Icons by [Font Awesome](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/).  
-Uses [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans) by Santiago Orozco.
+Built with [Jekyll](https://jekyllrb.com/) and hosted for free on [GitHub Pages](https://pages.github.com/). Design modified from [Dimension](https://html5up.net/dimension) by [ajlkn](https://aj.lkn.io/) (find other excellent templates at [HTML5 UP](https://html5up.net/)). Icons by [Font Awesome](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/). Uses [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans) by Santiago Orozco.
 
 The GitHub repo for this website is located at [liamtoney.github.io](https://github.com/liamtoney/liamtoney.github.io). Found a typo or bug? Please [let me know](https://github.com/liamtoney/liamtoney.github.io/issues/new).
