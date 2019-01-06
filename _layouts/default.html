@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Geophysics MS student at the University of Alaska Fairbanks / Geophysical Institute">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="../assets/css/main.css">
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css"></noscript>
+		<link rel="icon" type="image/png" href="../favicon.png" sizes="16x16">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="avatar">
+							<img src="../images/avatar.jpg" alt="Liam Toney">
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Liam Toney</h1>
+								<p>Geophysics MS student at the <a href="https://www.uaf.edu/uaf/">University of Alaska Fairbanks</a> / <a href="https://www.gi.alaska.edu/">Geophysical Institute</a></p>
+								<ul class="icons">
+
+									<li><a href="https://github.com/liamtoney" class="icon fa-github"><span class="label">GitHub</span></a></li>
+
+									<li><a href="https://scholar.google.com/citations?user=zwxtof0AAAAJ&hl=en" class="icon ai-google-scholar"><span class="label">Google Scholar</span></a></li>
+
+									<li><a href="https://www.linkedin.com/in/liamtoney/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+									<li><a href="mailto:ldtoney@alaska.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+
+								</ul>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#vita">Vita</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#fieldwork">Fieldwork</a></li>
+								<li><a href="#about">About</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Vita -->
+							<article id="vita">
+								<h2 class="major">Vita</h2>
+									{% capture m %}{% include sections/cv.md %}{% endcapture %}
+									{{ m | markdownify }}
+							</article>
+
+						<!-- Projects -->
+							<article id="projects">
+								<h2 class="major">Projects</h2>
+									{% capture m %}{% include sections/projects.md %}{% endcapture %}
+									{{ m | markdownify }}
+							</article>
+
+						<!-- Fieldwork -->
+							<article id="fieldwork">
+								<h2 class="major">Fieldwork photos</h2>
+									{% capture m %}{% include sections/fieldwork.md %}{% endcapture %}
+									{{ m | markdownify }}
+							</article>
+
+						<!-- About -->
+							<article id="about">
+							  <h2 class="major">About this site</h2>
+									{% capture m %}{% include sections/about.md %}{% endcapture %}
+									{{ m | markdownify }}
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!-- <p class="copyright">Footer text goes here.</p> -->
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	{% include new-window-fix.html %}
+
+	</body>
+</html>

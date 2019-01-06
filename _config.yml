@@ -1,0 +1,7 @@
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+plugins:
+  - jekyll-sitemap
