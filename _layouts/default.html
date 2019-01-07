@@ -41,25 +41,16 @@
 								</ul>
 							</div>
 						</div>
-						<nav>
+						<!-- <nav>
 							<ul>
-								<!-- <li><a href="#vita">Vita</a></li> -->
-								<!-- <li><a href="#projects">Projects</a></li> -->
-								<!-- <li><a href="#fieldwork">Fieldwork</a></li> -->
-								<li><a href="#about">About</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#vita">Vita</a></li>
 							</ul>
-						</nav>
+						</nav> -->
 					</header>
 
 				<!-- Main -->
 					<div id="main">
-
-						<!-- Vita -->
-							<article id="vita">
-								<h2 class="major">Vita</h2>
-									{% capture m %}{% include sections/cv.md %}{% endcapture %}
-									{{ m | markdownify }}
-							</article>
 
 						<!-- Projects -->
 							<article id="projects">
@@ -68,17 +59,17 @@
 									{{ m | markdownify }}
 							</article>
 
-						<!-- Fieldwork -->
-							<article id="fieldwork">
-								<h2 class="major">Fieldwork photos</h2>
-									{% capture m %}{% include sections/fieldwork.md %}{% endcapture %}
+						<!-- Vita -->
+							<article id="vita">
+								<h2 class="major">Vita</h2>
+									{% capture m %}{% include sections/cv.md %}{% endcapture %}
 									{{ m | markdownify }}
 							</article>
 
-						<!-- About -->
-							<article id="about">
+						<!-- About (link in footer) -->
+							<article id="about-this-site">
 							  <h2 class="major">About this site</h2>
-									{% capture m %}{% include sections/about.md %}{% endcapture %}
+									{% capture m %}{% include sections/about-this-site.md %}{% endcapture %}
 									{{ m | markdownify }}
 							</article>
 
@@ -86,7 +77,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<!-- <p class="copyright">Footer text goes here.</p> -->
+						<p class="copyright"><a href="#about-this-site">About this site</a></p>
 					</footer>
 
 			</div>
@@ -101,7 +92,7 @@
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
 
-	{% include new-window-fix.html %}
+		{% include new-window-fix.html %}
 
 	</body>
 </html>
