@@ -3,6 +3,8 @@
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Modified by Liam Toney
 -->
 <html>
 	<head>
@@ -66,7 +68,7 @@
 									{{ m | markdownify }}
 							</article>
 
-						<!-- About (link in footer) -->
+						<!-- About this site (link in footer) -->
 							<article id="about-this-site">
 							  <h2 class="major">About this site</h2>
 									{% capture m %}{% include sections/about-this-site.md %}{% endcapture %}
@@ -77,7 +79,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright"><a href="#about-this-site">About this site</a></p>
+						<p class="about"><a href="#about-this-site">About this site</a></p>
 					</footer>
 
 			</div>
