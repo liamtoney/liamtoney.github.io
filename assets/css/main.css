@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
 @import url(academicons.min.css);
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300italic,600italic,300,600");
 
@@ -314,15 +314,11 @@ input, select, textarea {
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome, Academicons;
+			font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", Academicons;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 1.5em;
 			text-transform: none !important;
-		}
-
-		.icon > .label {
-			display: none;
 		}
 
 /* Image */
