@@ -50,4 +50,4 @@ Received as a first-year and as a second-year
 ### Publications
 **Toney, L.D.**, R.E. Abbott, L.A. Preston, D.G. Tang, T. Finlay, and K. Phillips-Alonge. Joint body- and surface-wave tomography of Yucca Flat, Nevada using a novel seismic source, *Bull. Seismol. Soc. Am.* (Under review).
 
-### Fieldworks
+### Fieldwork
