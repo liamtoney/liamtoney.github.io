@@ -1,9 +1,3 @@
-# makes Kramdown behave like GFM
-kramdown:
- input: GFM
- auto_ids: true
- hard_wrap: false
- syntax_highlighter: rouge
 # automatically generate a sitemap
 plugins:
   - jekyll-sitemap
