@@ -1,7 +1,10 @@
-## **Liam D. Toney**
+# Liam D. Toney
+{: style="text-align: center;"}
+
 Email: [ldtoney@alaska.edu](mailto:ldtoney@alaska.edu)  
 Phone: [+1 360 305 8188](tel:+13603058188)  
 Web: [liam.earth](https://liam.earth/)
+{: style="text-align: center;"}
 
 ## Education
 **University of Alaska Fairbanks (UAF)** | *Fairbanks, AK* | May 2020 (expected)  
