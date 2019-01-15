@@ -49,11 +49,6 @@ blockquote, q {
 		content: none;
 	}
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 body {
 	-webkit-text-size-adjust: none;
 }
@@ -433,6 +428,7 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+			font-size: 1.2rem;
 		}
 
 		ul.alt {
@@ -476,6 +472,7 @@ input, select, textarea {
 		ul.icons li {
 			display: inline-block;
 			padding: 0 1.5em 0 0;
+			font-size: inherit;
 		}
 
 			ul.icons li:last-child {
@@ -499,6 +496,35 @@ input, select, textarea {
 				ul.icons li a:active {
 					background-color: rgba(255, 255, 255, 0.3);
 				}
+
+/* Table */
+
+	table {
+		width: 100%;
+		font-size: 1.2rem;
+	}
+
+	th {
+		padding-bottom: 0.8rem;
+		padding-right: 1rem;
+	}
+
+	td {
+		padding-top: 0.6rem;
+		padding-right: 1rem;
+	}
+
+	td:first-child {
+		padding-top: 0;
+	}
+
+	td:last-child {
+		padding-right: 0rem;
+	}
+
+	th:last-child {
+		padding-right: 0rem;
+	}
 
 /* BG */
 
