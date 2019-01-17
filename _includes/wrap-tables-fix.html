@@ -8,6 +8,7 @@ function wrap_tables() {
     var parent = tbl.parentNode;
     var wrapper = document.createElement('div');
     wrapper.style.overflowX="auto";
+    wrapper.style.webkitOverflowScrolling="touch";
     parent.insertBefore( wrapper, tbl );
     wrapper.appendChild(tbl);
   }
