@@ -55,20 +55,20 @@
 						<!-- Projects -->
 							<article id="projects">
 								<h2 class="major">Projects</h2>
-									{% capture m %}{% include sections/projects.md %}{% endcapture %}
+									{% capture m %}{% include projects.md %}{% endcapture %}
 									{{ m | markdownify }}
 							</article>
 
 						<!-- Vita -->
 							<article id="vita">
 									<p><a href="../cv.pdf">[Download PDF]</a></p>
-									{% include sections/cv.html %}
+									{% include cv.html %}
 							</article>
 
 						<!-- About this site (link in footer) -->
 							<article id="about-this-site">
 							  <h2 class="major">About this site</h2>
-									{% capture m %}{% include sections/about-this-site.md %}{% endcapture %}
+									{% capture m %}{% include about-this-site.md %}{% endcapture %}
 									{{ m | markdownify }}
 							</article>
 
@@ -90,9 +90,8 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
-
-		{% include new-window-fix.html %}
-		{% include wrap-tables-fix.html %}
+			<!-- My runtime modifications) -->
+			<script src="../assets/js/runtime.js"></script>
 
 	</body>
 </html>
