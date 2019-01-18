@@ -1,5 +1,5 @@
 CV_DIR = /Users/liamtoney/drive/career/cv
-INCLUDE_DIR = _includes/sections
+INCLUDE_DIR = _includes
 
 PDF = cv.pdf
 HTML = cv.html
