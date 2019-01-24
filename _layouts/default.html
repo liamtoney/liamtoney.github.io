@@ -49,7 +49,7 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#projects">Projects</a></li>
+								<!-- <li><a href="#projects">Projects</a></li> -->
 								<li><a href="#vita">Vita</a></li>
 							</ul>
 						</nav>
@@ -60,20 +60,7 @@
 
 						<!-- Projects -->
 							<article id="projects">
-								<h2 class="major">Projects</h2>
-
-									<div class="desktop">
-										<h3>My December 2018 blood sugar time series and spectrogram</h3>
-										{% include glucose.html %}
-										<br>
-									</div>
-
-									<div class="mobile">
-										<h3>My December 2018 blood sugar time series and spectrogram<sup>47</sup></h3>
-										<hr style="width: 10%; margin-bottom: 1.5em">
-										<p><sup>47</sup>Not yet mobile-friendly 😔</p>
-									</div>
-
+								<h2 class="underline">Projects</h2>
 							</article>
 
 						<!-- Vita -->
@@ -82,18 +69,34 @@
 									{% include cv.html %}
 							</article>
 
-						<!-- About this site (link in footer) -->
+						<!-- About this site (1st link in footer) -->
 							<article id="about-this-site">
-							  <h2 class="major">About this site</h2>
+							  <h2 class="underline">About this site</h2>
 									{% capture m %}{% include about-this-site.md %}{% endcapture %}
 									{{ m | markdownify }}
+							</article>
+
+						<!-- Glucose plot (2nd link in footer) -->
+							<article id="glucose">
+								<div class="desktop">
+									<h2 class="underline">Liam's December 2018 blood glucose</h2>
+									{% include glucose.html %}
+									<br>
+								</div>
+								<div class="mobile">
+									<h2 class="underline">Liam's December 2018 blood glucose<sup>47</sup></h2>
+									<p><sup>47</sup>Not yet mobile-friendly 😔</p>
+								</div>
 							</article>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="about"><a href="#about-this-site">About this site</a></p>
+						<p class="about">
+							<a href="#about-this-site">About this site</a> |
+							<a href="#glucose">My December 2018 glucose</a>
+						</p>
 					</footer>
 
 			</div>
