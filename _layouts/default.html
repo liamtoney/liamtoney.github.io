@@ -1,120 +1,119 @@
 <!DOCTYPE html>
 <!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Dimension by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-	Modified by Liam Toney
+  Modified by Liam Toney
 -->
 <html>
 
-	<head>
-		<title>{{ page.title }}</title>
-		<meta charset="utf-8">
-		<meta
-				name="description"
-				content="Geophysics MS student at the University of Alaska Fairbanks / Geophysical Institute">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<link rel="stylesheet" href="../assets/css/main.css">
-		<noscript><link rel="stylesheet" href="../assets/css/noscript.css"></noscript>
-		<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
-		<link rel="manifest" href="../site.webmanifest">
-		<!-- Bokeh stylesheet -->
-		<link rel="stylesheet"  type="text/css" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.css">
-	</head>
+<head>
+  <title>{{ page.title }}</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Geophysics MS student at the University of Alaska Fairbanks / Geophysical Institute">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <noscript>
+    <link rel="stylesheet" href="../assets/css/noscript.css"></noscript>
+  <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <!-- Bokeh stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.css">
+</head>
 
-	<body class="is-preload">
+<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- Wrapper -->
+  <div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="avatar">
-							<img src="../images/liam.jpg" alt="Liam Toney">
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>{{ page.title }}</h1>
-								{{ content }}
-								<ul class="icons">
-									<li><a href="https://github.com/liamtoney" class="icon fa-github"></a>
-									<li><a href="https://scholar.google.com/citations?user=zwxtof0AAAAJ&hl=en" class="icon ai-google-scholar"></a>
-									<li><a href="https://www.linkedin.com/in/liamtoney/" class="icon fa-linkedin-in"></a>
-									<li><a href="mailto:ldtoney@alaska.edu" class="icon fa-envelope"></a>
-								</ul>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<!-- <li><a href="#projects">Projects</a></li> -->
-								<li><a href="#vita">Vita</a></li>
-							</ul>
-						</nav>
-					</header>
+    <!-- Header -->
+    <header id="header">
+      <div class="avatar">
+        <img src="../images/liam.jpg" alt="Liam Toney">
+      </div>
+      <div class="content">
+        <div class="inner">
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+          <ul class="icons">
+            <li><a href="https://github.com/liamtoney" class="icon fa-github"></a>
+            <li><a href="https://scholar.google.com/citations?user=zwxtof0AAAAJ&hl=en" class="icon ai-google-scholar"></a>
+            <li><a href="https://www.linkedin.com/in/liamtoney/" class="icon fa-linkedin-in"></a>
+            <li><a href="mailto:ldtoney@alaska.edu" class="icon fa-envelope"></a>
+          </ul>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <!-- <li><a href="#projects">Projects</a></li> -->
+          <li><a href="#vita">Vita</a></li>
+        </ul>
+      </nav>
+    </header>
 
-				<!-- Main -->
-					<div id="main">
+    <!-- Main -->
+    <div id="main">
 
-						<!-- Projects -->
-							<article id="projects">
-								<h2 class="underline">Projects</h2>
-							</article>
+      <!-- Projects -->
+      <article id="projects">
+        <h2 class="underline">Projects</h2>
+      </article>
 
-						<!-- Vita -->
-							<article id="vita">
-									<p class="centered"><a href="../Toney_CV.pdf" class="button">Download PDF</a></p>
-									{% include cv.html %}
-							</article>
+      <!-- Vita -->
+      <article id="vita">
+        <p class="centered"><a href="../Toney_CV.pdf" class="button">Download PDF</a></p>
+        {% include cv.html %}
+      </article>
 
-						<!-- About this site (1st link in footer) -->
-							<article id="about-this-site">
-							  <h2 class="underline">About this site</h2>
-									{% capture m %}{% include about-this-site.md %}{% endcapture %}
-									{{ m | markdownify }}
-							</article>
+      <!-- About this site (1st link in footer) -->
+      <article id="about-this-site">
+        <h2 class="underline">About this site</h2>
+        {% capture m %}{% include about-this-site.md %}{% endcapture %} {{ m | markdownify }}
+      </article>
 
-						<!-- Glucose plot (2nd link in footer) -->
-							<article id="glucose">
-								<div class="desktop">
-									<h2 class="underline">Liam's December 2018 blood glucose</h2>
-									{% include glucose.html %}
-									<br>
-								</div>
-								<div class="mobile">
-									<h2 class="underline">Liam's December 2018 blood glucose<sup>47</sup></h2>
-									<p><sup>47</sup>Not yet mobile-friendly 😔</p>
-								</div>
-							</article>
+      <!-- Glucose plot (2nd link in footer) -->
+      <article id="glucose">
+        <div class="desktop">
+          <h2 class="underline">Liam's December 2018 blood glucose</h2>
+          {% include glucose.html %}
+          <br>
+        </div>
+        <div class="mobile">
+          <h2 class="underline">Liam's December 2018 blood glucose<sup>47</sup></h2>
+          <p><sup>47</sup>Not yet mobile-friendly 😔</p>
+        </div>
+      </article>
 
-					</div>
+    </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="about">
-							<a href="#about-this-site">About this site</a> |
-							<a href="#glucose">My December 2018 glucose</a>
-						</p>
-					</footer>
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="about">
+        <a href="#about-this-site">About this site</a> |
+        <a href="#glucose">My December 2018 glucose</a>
+      </p>
+    </footer>
 
-			</div>
+  </div>
 
-		<!-- BG -->
-			<div id="bg"></div>
+  <!-- BG -->
+  <div id="bg"></div>
 
-		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
-			<!-- My runtime modification script -->
-			<script src="../assets/js/runtime.js"></script>
-			<!-- Bokeh scripts -->
-			<script src="../assets/js/glucose.js"></script>
-			<script src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.js"></script>
+  <!-- Scripts -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/browser.min.js"></script>
+  <script src="../assets/js/breakpoints.min.js"></script>
+  <script src="../assets/js/util.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <!-- My runtime modification script -->
+  <script src="../assets/js/runtime.js"></script>
+  <!-- Bokeh scripts -->
+  <script src="../assets/js/glucose.js"></script>
+  <script src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.js"></script>
 
-	</body>
+</body>
+
 </html>
