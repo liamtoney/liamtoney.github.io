@@ -11,9 +11,6 @@ cv:
 	cp $(addprefix $(CV_DIR)/,$(PDF)) Toney_CV.pdf
 	cp $(addprefix $(CV_DIR)/,$(HTML)) $(addprefix $(INCLUDE_DIR)/,$(HTML))
 	cd $(CV_DIR) && make clean
-	@echo "----------------------------------------------------------"
-	@echo "Don't forget to update LinkedIn and Facebook if necessary!"
-	@echo "----------------------------------------------------------"
 
 serve:
 	bundle exec jekyll serve --open-url --livereload
