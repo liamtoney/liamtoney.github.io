@@ -1,4 +1,4 @@
-CV_DIR = /Users/liamtoney/drive/career/cv
+CV_DIR = ~/drive/career/cv
 INCLUDE_DIR = _includes
 
 PDF = cv.pdf
