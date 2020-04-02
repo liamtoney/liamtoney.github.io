@@ -69,23 +69,10 @@
         {% include cv.html %}
       </article>
 
-      <!-- About this site (1st link in footer) -->
+      <!-- About this site (link in footer) -->
       <article id="about-this-site">
         <h2 class="underline">About this site</h2>
         {% capture m %}{% include about-this-site.md %}{% endcapture %} {{ m | markdownify }}
-      </article>
-
-      <!-- Glucose plot (2nd link in footer) -->
-      <article id="glucose">
-        <div class="desktop">
-          <h2 class="underline">My February 2019 blood glucose</h2>
-          {% include glucose.html %}
-          <br>
-        </div>
-        <div class="mobile">
-          <h2 class="underline">My February 2019 blood glucose<sup>47</sup></h2>
-          <p><sup>47</sup>Not yet mobile-friendly 😔</p>
-        </div>
       </article>
 
     </div>
@@ -93,8 +80,7 @@
     <!-- Footer -->
     <footer id="footer">
       <p class="about">
-        <a href="#about-this-site">About this site</a> |
-        <a href="#glucose">February 2019 glucose</a>
+        <a href="#about-this-site">About this site</a>
       </p>
     </footer>
 
@@ -111,9 +97,6 @@
   <script src="../assets/js/main.js"></script>
   <!-- My runtime modification script -->
   <script src="../assets/js/runtime.js"></script>
-  <!-- Bokeh scripts -->
-  <script src="../assets/js/glucose.js"></script>
-  <script src="https://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.js"></script>
 
 </body>
 
