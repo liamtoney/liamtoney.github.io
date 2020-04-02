@@ -4,7 +4,7 @@ https://jekyllcodex.org/without-plugin/new-window-fix/
 Authored by J.H. van der Schee
 */
 
-function external_new_window() // open external links in a new window
+function external_new_window()  // Open external links in a new window
 {
   for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) {
     var b = c[a];
@@ -12,7 +12,7 @@ function external_new_window() // open external links in a new window
   }
 }
 
-function pdf_new_window() // open PDF links in a new window
+function pdf_new_window()  // Open PDF links in a new window
 {
   if (!document.getElementsByTagName) return false;
   var links = document.getElementsByTagName("a");
