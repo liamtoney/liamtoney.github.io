@@ -1086,22 +1086,3 @@ body.is-article-visible #footer {
 body.is-preload #footer {
   opacity: 0;
 }
-
-/* Bokeh plot */
-.mobile {
-  display: none;
-}
-
-.desktop {
-  display: block;
-}
-
-@media screen and (max-width: 1160px) {
-  .desktop {
-    display: none
-  }
-
-  .mobile {
-    display: block;
-  }
-}
