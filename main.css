@@ -38,11 +38,14 @@ a:hover {
 a.icon {
   color: inherit;
   font-size: 60px;
-  padding-left: var(--icon_spacing);
 }
 
 a.icon:hover {
   color: var(--hover_color);
+}
+
+li {
+  padding-left: var(--icon_spacing);
 }
 
 ul {
