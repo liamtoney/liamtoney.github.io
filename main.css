@@ -1,0 +1,53 @@
+:root {
+  --icon_spacing: 55px;
+  --hover_color: #f28e2b;
+}
+
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  padding-right: 50px;
+  padding-left: 50px;
+  max-width: 750px;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 70px;
+}
+
+p {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #4e79a7;
+}
+
+a:hover {
+  color: var(--hover_color);
+  transition: 0.3s;
+}
+
+a.icon {
+  color: inherit;
+  font-size: 60px;
+  padding-left: var(--icon_spacing);
+}
+
+a.icon:hover {
+  color: var(--hover_color);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: calc(-1 * var(--icon_spacing));
+  display: inline-flex;
+}
