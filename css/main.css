@@ -3,39 +3,103 @@
   --hover_color: #f28e2b;
 }
 
+@font-face {
+  font-family: JetBrainsMono-Regular;
+  src: ../webfonts/JetBrainsMono-Regular.woff2;
+}
+
 * {
   font-family: Helvetica, sans-serif;
 }
 
+/* Animate every page */
 body {
-  padding-right: 50px;
-  padding-left: 50px;
-  max-width: 750px;
-  position: absolute;
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
-}
-
-div {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
   animation-name: fade_in;
   animation-duration: 1s;
   animation-timing-function: ease;
+  font-size: 25px;
 }
 
-@keyframes fade_in {
-  0% {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+/* Projects page */
+div.projects {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+}
+
+/* Main page */
+div.landing {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  width: 90%;
+  max-width: 1000px;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0;
+}
+
+/* CV page */
+div.cv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1400px;
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow-y: auto;
+  height: 100%;
+}
+
+img.headshot {
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+  height: 280px;
+  margin-bottom: 70px;
+  margin-right: 65px;
+}
+
+code {
+  font-family: JetBrainsMono-Regular, monospace;
+  font-size: 1.5rem
+}
+
+table {
+  overflow-x: auto;
+  display: block;
+  padding-bottom: 20px;
+}
+
+td {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+td:last-child {
+  padding-right: 0;
 }
 
 h1 {
   font-size: 70px;
+}
+
+h2 {
+  font-size: 40px;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px
 }
 
 p {
@@ -62,12 +126,35 @@ a.icon:hover {
 }
 
 li {
-  padding-left: var(--icon_spacing);
+  font-size: inherit;
+  padding-bottom: 10px;
 }
 
-ul {
+li:last-child {
+  padding-bottom: 0;
+}
+
+li.icon {
+  padding-left: var(--icon_spacing);
+  padding-bottom: 0;
+}
+
+ul.icons {
   list-style-type: none;
   padding-left: 0;
   margin-left: calc(-1 * var(--icon_spacing));
   display: inline-flex;
+}
+
+/* Animation definition */
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
