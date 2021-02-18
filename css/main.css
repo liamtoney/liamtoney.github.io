@@ -3,6 +3,20 @@
   --hover_color: #f28e2b;
 }
 
+.yesMobile {
+  display: none;
+}
+
+@media all and (max-width: 1000px) {
+  .noMobile {
+    display: none;
+  }
+
+  .yesMobile {
+    display: inline;
+  }
+}
+
 @font-face {
   font-family: JetBrainsMono-Regular;
   src: ../webfonts/JetBrainsMono-Regular.woff2;
