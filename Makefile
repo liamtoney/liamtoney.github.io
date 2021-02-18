@@ -1,3 +1,5 @@
+# NEEDS UPDATING FOR NEW SITE!
+
 CV_DIR = ~/drive/career/cv
 INCLUDE_DIR = _includes
 
