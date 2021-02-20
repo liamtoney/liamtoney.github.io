@@ -44,7 +44,7 @@ div.projects {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -55%);
+  transform: translate(-50%, -50%);
 }
 
 /* Main page */
@@ -52,7 +52,7 @@ div.landing {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -55%);
+  transform: translate(-50%, -50%);
   width: 90%;
   max-width: 1000px;
   padding-left: 5%;
@@ -67,7 +67,6 @@ div.cv {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -55%);
   transform: translate(-50%, -50%);
   width: 90%;
   max-width: 1400px;
